@@ -320,7 +320,7 @@ function DrawGant() {
         for(var i = 1; i< ResultSumData[0].length; i++ )
         {
           // Example  g.AddTaskItem(new JSGantt.TaskItem(1, 'NAME', 'TIME START', ' TIME END', 'COLOR', '', 0, 'Brian', comlet, group(1 - parent), partent id, 1));
-          g.AddTaskItem(new JSGantt.TaskItem(i, 'Станок'+(i), '', '', getColor(i), '', 0, 'Brian', 0, 1, 0, 1));
+          g.AddTaskItem(new JSGantt.TaskItem(i, 'Станок '+(i), '', '', getColor(i), '', 0, 'Станок '+(i), 0, 1, 0, 1));
             for(var j = 0 ; j< ResultSumData.length; j++)
             {
                 var TaskStart = new Date();
@@ -368,7 +368,7 @@ function DrawGant() {
                 tasjArray1[j][i-1].end = TaskEnd;
 
                 console.log('Деталь'+(ResultSumData[j][0]) +' '+TaskStart+' '+TaskEnd +' '+ getFormatDate(TaskStart)+ ' ' +getFormatDate(TaskEnd) );
-                g.AddTaskItem(new JSGantt.TaskItem(((i)*10+(ResultSumData[j][0])), 'Деталь'+(ResultSumData[j][0]), getFormatDate(TaskStart), getFormatDate(TaskEnd), getColor(ResultSumData[j][0]), '', 0, 'Brian', 100, 0, (i), 1));
+                g.AddTaskItem(new JSGantt.TaskItem(((i)*10+(ResultSumData[j][0])), 'Деталь '+(ResultSumData[j][0]), getFormatDate(TaskStart), getFormatDate(TaskEnd), getColor(ResultSumData[j][0]), '', 0, 'Деталь '+(ResultSumData[j][0]), 100, 0, (i), 1));
 
             }
         }

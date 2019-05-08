@@ -16,10 +16,16 @@
 </head>
 
 <body>
+        <nav class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <a class="navbar-brand" href="#"> 	
+
+                        Метод Петрова- Соколицина</a>
+              </nav>
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-md-2">
+            <div class="shadow p-3 col-md-2">
 
 
                 <h1 class="h3 mb-3 font-weight-normal">Форма ввода размера таблицы</h1>
@@ -46,18 +52,20 @@
                             <div class="col-md-3" ><h3>Оптимизированная таблица сумм (первый столбец номер детали)</h3> </div>
                 </div>
                 <div class="row">
-                        <div class="col-md-3" id='firstTable'></div>
-                        <div class="col-md-3" id='firstSumTable'></div>
-                        <div class="col-md-3" id='resultTable'></div>
-                        <div class="col-md-3" id='resultSumTable'></div>
+                        <div class="shadow-sm p-3 mb-5 col-md-3" id='firstTable'></div>
+                        <div class="shadow-sm p-3 mb-5 col-md-3" id='firstSumTable'></div>
+                        <div class="shadow-sm p-3 mb-5 col-md-3" id='resultTable'></div>
+                        <div class="shadow-sm p-3 mb-5 col-md-3" id='resultSumTable'></div>
                 </div>
             </div>
            
         </div>
         <div>
+                <div class="mt-10 col-sm-12"></div>
             <h3>Оптимизированная Диаграмма Гантта</h3>
         </div>
         <div class="row">
+            <div class="mt-10 col-sm-12"></div>
             <div class="col-sm-12">
                 <div class="gantt" id="GanttChartDIV"></div>
             </div>
